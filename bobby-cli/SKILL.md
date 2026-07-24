@@ -132,8 +132,6 @@ BOBBY_CLI_PROFILES_DIR=~/.openclaw/user-sessions \
 > ✅ **Login สำเร็จแล้ว!**
 >
 > ตอนนี้ personal memory ของคุณพร้อมใช้งานใน DM นี้แล้วครับ — ครั้งต่อไปที่ DM มาฉันจะจำคุณได้ทันที
->
-> ถ้าต้องการใช้ memory ใน guild channel ให้ admin ของ server รัน `/bobby_cli setup` แยกต่างหาก
 
 Then start a new session (`{ "action": "new" }`). Do NOT use
 session-memory tools after this point.
