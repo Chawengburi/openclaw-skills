@@ -120,6 +120,13 @@ continue to Step 4. On `ok:false`, follow the returned `hint` field; if
 that's not actionable, tell the user:
 > ❌ Login ไม่สำเร็จครับ — กรุณาตรวจสอบ email และ password แล้วลองใหม่
 
+**If you need to retry this command for any reason, never reuse the email
+or password value as it appears in this conversation's own history —
+openClaw's own output redaction can mask a secret-looking value as `***`
+in a tool-call echo, and that masked placeholder is not a real credential.
+Always go back to Step 2 and ask the user to resend fresh credentials
+before retrying Step 3.**
+
 **Step 4 — Verify:**
 ```bash
 BOBBY_CLI_PROFILES_DIR=~/.openclaw/user-sessions \
