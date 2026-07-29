@@ -124,8 +124,14 @@ do not claim a failure occurred before credentials were ever sent.
 
 ## Step 3 — Install the rewritten `AGENTS.md`
 
-Programmatically write `~/.openclaw/workspace/AGENTS.md`, same
-backup-before-overwrite behavior as the current wizard. Apply the exact
+Before making any changes, first run:
+```bash
+cp ~/.openclaw/workspace/AGENTS.md ~/.openclaw/workspace/AGENTS.md.backup.$(date +%s)
+```
+to snapshot the current file. Only after this backup command has been run,
+apply the edits below.
+
+Programmatically write `~/.openclaw/workspace/AGENTS.md`. Apply the exact
 four edits below to the file currently live at
 `~/.openclaw/workspace/AGENTS.md`. Everything in the current file outside
 those four edited sections is carried over unchanged.
